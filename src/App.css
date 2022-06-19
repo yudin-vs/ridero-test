@@ -1,0 +1,53 @@
+body {
+  background: #e7a842;
+}
+
+.Button {
+  width: 180px;
+  height: 45px;
+  padding-top: 9px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 20px auto;
+  font: normal 17px arial;
+  background: #070707;
+}
+
+.Button:not(.active):hover {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: rgb(5, 5, 5);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.BooksTable {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.BooksTable__body .BooksTable__row {
+  cursor: pointer;
+}
+
+.BooksTable__row {
+  text-align: center;
+}
+
+.BooksTable__head {
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 10px 15px;
+  background: #996a20;
+  font-size: 20px;
+}
+
+.BooksTable__head--cell,
+.BooksTable__body--cell {
+  padding: 5px;
+  border: 1px solid #775011;
+}
